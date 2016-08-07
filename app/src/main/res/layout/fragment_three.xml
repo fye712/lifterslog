@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.franklin.swipeviews.ThreeFragment">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:gravity="center"
+        android:text="@string/exercise_title"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bench"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head"
+        android:text="@string/bench"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/ohp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bench"
+        android:text="@string/ohp"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/squat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ohp"
+        android:text="@string/squat"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/dead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/squat"
+        android:text="@string/dead"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/barbell2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:src="@drawable/barbell" />
+
+</RelativeLayout>

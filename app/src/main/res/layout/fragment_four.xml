@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.franklin.swipeviews.FourFragment">
+
+    <TextView
+        android:id="@+id/caloriesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="30px"
+        android:text="@string/kcal_title"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caloriesTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sex"
+        android:layout_marginBottom="15px"
+        android:hint="@string/age_hint"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/age"
+        android:layout_marginBottom="15px"
+        android:hint="@string/bweight_hint"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/heart_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weight"
+        android:layout_marginBottom="15px"
+        android:hint="@string/heart_rate_hint"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heart_rate"
+        android:hint="@string/time_hint"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:text="Calculate calories burned" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100px"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textSize="40dp" />
+
+
+</RelativeLayout>
